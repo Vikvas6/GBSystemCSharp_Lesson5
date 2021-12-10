@@ -28,7 +28,7 @@ namespace Main
         public void RecreateClient()
         {
             playerName = "%UPD%" + playerName;
-            StopHost();
+            StopClient();
             StartClient();
         }
     }
