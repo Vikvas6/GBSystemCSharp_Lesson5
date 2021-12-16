@@ -1,20 +1,35 @@
+using System.Collections.Generic;
 using Characters;
 using UnityEngine;
 using UnityEngine.Networking;
+
 
 namespace Main
 {
     public class SolarSystemNetworkManager : NetworkManager
     {
-        [SerializeField] private string playerName;
+        public string playerName;
+
+        public List<string> _playerNames = new List<string>();
 
         public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
         {
-            var spawnTransform = GetStartPosition();
+            NetworkServer.AddPlayerForConnection(conn, InstantiatePlayer(), playerControllerId);
+        }
 
+        public GameObject InstantiatePlayer()
+        {
+            var spawnTransform = GetStartPosition();
             var player = Instantiate(playerPrefab, spawnTransform.position, spawnTransform.rotation);
             player.GetComponent<ShipController>().PlayerName = playerName;
-            NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
+            return player;
+        }
+
+        public void RecreateClient()
+        {
+            playerName = "%UPD%" + playerName;
+            StopClient();
+            StartClient();
         }
     }
 }
