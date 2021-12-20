@@ -265,13 +265,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 3820659569670285169, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f23d3e135dca2754e8939c38a4163b54, type: 2}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7816849
+      value: 1.837
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -279,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.1163445
+      value: 14.57
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -309,7 +313,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4130148667640944292, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+    - {fileID: 820943329694006552, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+    - {fileID: 4779664964320606154, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
 --- !u!1 &647671100
 GameObject:
@@ -388,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647671100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -0.08, z: -10.25}
+  m_LocalPosition: {x: -1, y: 2.14, z: -16.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -703,7 +710,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7fb52107f8259f6408c38cafdd203579, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
