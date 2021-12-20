@@ -265,13 +265,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 3820659569670285169, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f23d3e135dca2754e8939c38a4163b54, type: 2}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7816849
+      value: 1.837
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -279,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.1163445
+      value: 14.57
       objectReference: {fileID: 0}
     - target: {fileID: 8749910956740479402, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -309,8 +313,94 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4130148667640944292, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+    - {fileID: 820943329694006552, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+    - {fileID: 4779664964320606154, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ba31f4b24eda93498a0bb348ac82bd7, type: 3}
+--- !u!1 &647671100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 647671103}
+  - component: {fileID: 647671102}
+  - component: {fileID: 647671101}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &647671101
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647671100}
+  m_Enabled: 1
+--- !u!20 &647671102
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647671100}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &647671103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647671100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: 2.14, z: -16.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706637504
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +710,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7fb52107f8259f6408c38cafdd203579, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
